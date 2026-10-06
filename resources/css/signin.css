@@ -1,0 +1,44 @@
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.8);display:grid;place-items:center;padding:18px;z-index:100}.modal.hidden{display:none}.modal-card{position:relative;width:min(520px,100%);max-height:92vh;overflow:auto;background:#0d0d0d;border:1px solid #292929;border-radius:15px;padding:24px;box-shadow:0 30px 80px rgba(0,0,0,.6)}.close-btn{position:absolute;top:12px;right:12px;width:28px;height:28px;border:1px solid #292929;background:#161616;color:#999;border-radius:50%;font-size:18px}.modal-card h3{font-size:25px;font-weight:500;margin:9px 0 4px}.modal-card>p:not(.tiny-label){font:10px Arial,sans-serif;color:#777;margin:0}.choice-grid{display:grid;gap:8px;margin-top:18px}.choice{background:#121212;border:1px solid #282828;color:#fff;text-align:left;border-radius:9px;padding:12px}.choice b,.choice span{display:block}.choice b{font-size:11px}.choice span{font:8px Arial,sans-serif;color:#777;margin-top:2px}.account-switch{display:flex;gap:6px;margin-top:15px}.account-switch button{flex:1;background:#111;border:1px solid #292929;color:#777;border-radius:7px;padding:8px;font:9px Arial,sans-serif}.account-switch button.active{color:#fff;background:#1b1b1b}.account-form{display:grid;gap:11px;margin-top:18px}.account-form.hidden{display:none}.account-form label{font:9px Arial,sans-serif;color:#888}.account-form input,.account-form textarea{display:block;margin-top:5px;width:100%;background:#111;color:#fff;border:1px solid #2a2a2a;border-radius:7px;padding:9px;font:10px Arial,sans-serif;outline:none}.modal-actions{display:flex;justify-content:space-between;gap:8px;margin-top:18px}.resume-upload-card{width:min(560px,100%)}.resume-upload-box{display:flex;align-items:center;gap:12px;margin:22px 0 12px;padding:14px;background:#151515;border:1px solid #2d2d2d;border-radius:9px}.resume-file-icon{width:42px;height:46px;display:grid;place-items:center;background:#2a1b08;border:1px solid #70460d;border-radius:6px;color:#ffbd62;font:800 9px Arial,sans-serif}.resume-upload-box strong,.resume-upload-box span{display:block}.resume-upload-box strong{font:500 11px Arial,sans-serif}.resume-upload-box span{margin-top:4px;color:#777;font:8px Arial,sans-serif}.resume-preview-card{width:min(820px,100%)}.resume-preview-frame{height:min(65vh,620px);margin-top:16px;background:#171717;border:1px solid #2d2d2d;border-radius:8px;display:grid;place-items:center;overflow:hidden;color:#777;font:10px Arial,sans-serif;text-align:center;padding:20px}.resume-preview-frame iframe{width:100%;height:100%;border:0;background:#fff}.light-mode .resume-upload-box,.light-mode .resume-preview-frame{background:#f5f0e9;border-color:#d8d1c6}.light-mode .resume-file-icon{background:#fff0d9;border-color:#e1ae68;color:#a45300}@media(max-width:650px){.modal-card{padding:20px}.resume-preview-frame{height:55vh}}
+
+/* Sign-in layout follows the compact, white professional identity-provider form. */
+#accountModal.signin-mode{background:rgba(0,0,0,.72)}
+#accountModal.signin-mode .modal-card{width:min(466px,100%);padding:32px;background:#fff;border:1px solid #d9d9d9;border-radius:8px;color:#111;box-shadow:0 14px 38px rgba(0,0,0,.2)}
+#accountModal.signin-mode .account-eyebrow,
+#accountModal.signin-mode #accountCopy,
+#accountModal.signin-mode .account-switch,
+#accountModal.signin-mode #roleChoices,
+#accountModal.signin-mode .signup-switch,
+#accountModal.signin-mode .signup-terms{display:none}
+#accountModal.signin-mode .close-btn{top:12px;right:12px;background:#f5f1e9;border-color:#d5cbbb;color:#625b51}
+#accountModal.signin-mode h3{margin:0;font:700 29px/1.2 Arial,sans-serif;color:#111}
+#accountModal.signin-mode .signin-join{display:block;margin:16px 0 25px;font:14px Arial,sans-serif;color:#333}
+#accountModal.signin-mode .signin-join button,
+#accountModal.signin-mode .forgot-password{border:0;background:none;padding:0;color:#075db5;font:inherit;text-decoration:none}
+#accountModal.signin-mode #signinSocials{display:grid;gap:12px}
+#accountModal.signin-mode .social-provider{width:100%;min-height:43px;display:flex;align-items:center;justify-content:center;gap:9px;border:1px solid #555;border-radius:23px;background:#fff;color:#333;font:14px Arial,sans-serif}
+#accountModal.signin-mode .social-provider:hover{background:#f7f7f7}
+#accountModal.signin-mode .social-google{justify-content:space-between;padding:5px 12px;text-align:left}
+#accountModal.signin-mode .social-google span:nth-child(2){display:grid;flex:1}
+#accountModal.signin-mode .social-google small{font-size:11px;color:#666}
+#accountModal.signin-mode .social-google>b{font-size:18px;color:#4285f4}
+#accountModal.signin-mode .provider-avatar{width:24px;height:24px;display:grid;place-items:center;border-radius:50%;background:#5b1e14;color:#fff;font-weight:700}
+#accountModal.signin-mode .provider-icon{font-size:20px}
+#accountModal.signin-mode .microsoft-icon{color:#555}
+#accountModal.signin-mode .apple-icon{font-size:19px}
+#accountModal.signin-mode .signin-terms{display:block;margin:12px 0 10px;font:11px/1.35 Arial,sans-serif;color:#555}
+#accountModal.signin-mode .signin-terms a{color:#075db5}
+#accountModal.signin-mode .signin-divider{display:flex;align-items:center;gap:10px;margin:7px 0 14px;color:#666;font:13px Arial,sans-serif}
+#accountModal.signin-mode .signin-divider:before,
+#accountModal.signin-mode .signin-divider:after{content:"";height:1px;background:#ddd;flex:1}
+#accountModal.signin-mode .account-form{gap:14px;margin-top:0}
+#accountModal.signin-mode .account-form label{position:relative;color:#333;font:14px Arial,sans-serif}
+#accountModal.signin-mode .account-form input{height:48px;margin-top:5px;padding:10px 12px;border:1px solid #444;border-radius:4px;background:#fff;color:#111;font:16px Arial,sans-serif}
+#accountModal.signin-mode .account-form input:focus{border-color:#075db5;box-shadow:0 0 0 1px #075db5}
+#accountModal.signin-mode .password-visibility{position:absolute;right:10px;bottom:10px;border:0;background:none;color:#555;font-size:17px}
+#accountModal.signin-mode .forgot-password{display:block;font:700 14px Arial,sans-serif}
+#accountModal.signin-mode .keep-signed-in{display:flex!important;align-items:center;gap:7px;margin-top:11px;color:#555!important}
+#accountModal.signin-mode .keep-signed-in input{width:24px;height:24px;margin:0;accent-color:#087f5b}
+#accountModal.signin-mode .account-submit-row{display:block;margin-top:8px}
+#accountModal.signin-mode .account-submit-row .pill-btn{width:100%;height:48px;border:0;border-radius:25px;background:#0a66c2;color:#fff;font:700 16px Arial,sans-serif}
+#accountModal.signin-mode .account-submit-row .pill-btn:hover{background:#004182;transform:none}
+@media(max-width:650px){#accountModal.signin-mode .modal-card{padding:26px 22px}#accountModal.signin-mode h3{font-size:26px}}
